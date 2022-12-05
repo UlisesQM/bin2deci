@@ -24,7 +24,7 @@ $input.addEventListener("keyup", e=>{
   }else if(e.key == "Enter" && value2.length == 8){
     $resultado.innerHTML = "Resultado"
   }
-  else if(value > 1 || value < 0 ){
+  else if(value > 1 || value < 0 || e.key != "Enter"){
     e.target.value = value2.substring(0, value2.length - 1);
   }else{
     console.error("No es numero")
