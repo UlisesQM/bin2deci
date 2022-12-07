@@ -13,7 +13,7 @@ $input.addEventListener("keyup", (e) => {
     } else if (e.key == "Enter" && value2.length == 8) {
     } else if (value > 1 || value < 0 || e.key != "Enter") {
       e.target.value = value2.substring(0, value2.length - 1);
-    }else {
+    } else {
       console.error("No es numero");
     }
   }
@@ -40,10 +40,10 @@ $input.addEventListener("keyup", (e) => {
   Restriccion();
 
   //RESULTADO
-  $button.addEventListener("click",e=>{
-    if (value2.length == 8 ) {
+  $button.addEventListener("click", (e) => {
+    if (value2.length == 8) {
       //CALCULO
       $resultado.innerHTML = calculo();
     }
-  })
+  });
 });
